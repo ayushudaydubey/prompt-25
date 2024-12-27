@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrolling Product Banner</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes scroll {
+      from {
+        transform: translateX(0%);
+      }
+      to {
+        transform: translateX(-70%);
+      }
+    }
+
+      .scrolling-banner {
+      animation: scroll 35s linear infinite;
+      animation-delay: 1s;
+    }  
+  </style>
+</head>
+
+<body class="bg-gray-100">
+  
+  <main class="h-screen w-screen bg-black px-6 py-4 overflow-hidden">
+    <!-- Navigation Bar -->
+  <nav class="bg-white border-b-2 border-slate-400 shadow-sm mb-2">
+    <div class="container mx-auto flex items-center justify-between px-4 py-2">
+      <!-- Logo -->
+      <div class="text-2xl font-bold text-slate-700">
+        <a href="#">BrandShoes</a>
+      </div>
+
+      <!-- Navigation Links -->
+      <ul class="hidden md:flex space-x-6 text-slate-600">
+        <li><a href="#" class="hover:text-slate-900 transition duration-300">Home</a></li>
+        <li><a href="#" class="hover:text-slate-900 transition duration-300">Shop</a></li>
+        <li><a href="#" class="hover:text-slate-900 transition duration-300">Brands</a></li>
+        <li><a href="#" class="hover:text-slate-900 transition duration-300">About Us</a></li>
+        <li><a href="#" class="hover:text-slate-900 transition duration-300">Contact</a></li>
+      </ul>
+
+      <!-- Search and Cart Icons -->
+      <div class="flex items-center space-x-4">
+        <button class="hidden md:block text-slate-600 hover:text-slate-900">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16l-4-4m0 0l4-4m-4 4h16" />
+          </svg>
+        </button>
+        <a href="#" class="text-slate-600 hover:text-slate-900">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h18M9 21h6m-3-3V6" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Icon -->
+      <button class="md:hidden text-slate-600 hover:text-slate-900">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+    <div class=" flex w-fit gap-5 scrolling-banner ">
+     
+      <div class="img1  h-[60vh] w-[50vw] text-center text-white ">
+        <img src="./p1.avif " alt="" class="rounded-lg h-full w-full object-cover object-center mb-2"> 
+        <h1 class=" text-3xl font-medium mb-2">Nike Air Max 270</h1>
+        <h2 class=" text-xl mb-2">Step into Comfort and Style</h2>
+        <h3 class=" text-m mb-2">Lightweight mesh upper for breathability
+        </h3>
+        <button class=" px-3 py-1 text-lg bg-white text-black rounded-lg border-2 border-slate-400 "> Buy Now..!</button>
+      </div>
+      <div class="img1  h-[60vh] w-[50vw] text-center text-white">
+        <img src="./p8.avif " alt="" class="rounded-lg h-full w-full object-cover object-center"> 
+          <h1 class=" text-3xl font-medium mb-2">Adidas Ultraboost 22</h1>
+        <h2 class=" text-xl mb-2">Unleash Your Energy</h2>
+        <h3 class=" text-m mb-2">Stretchweb outsole for superior traction
+
+        </h3>
+        <button class=" px-3 py-1 text-lg bg-white text-black rounded-lg border-2 border-slate-400 "> Buy Now..!</button>
+      </div>
+      <div class="img1  h-[60vh] w-[50vw] text-center text-white">
+        <img src="./p6.avif " alt="" class="rounded-lg h-full w-full object-cover object-center">
+          <h1 class=" text-3xl font-medium mb-2"> Puma RS-X3</h1>
+        <h2 class=" text-xl mb-2"> Retro Vibes, Modern Comfort</h2>
+        <h3 class=" text-m mb-2">Rubber outsole for durability and grip
+
+        </h3>
+        <button class=" px-3 py-1 text-lg bg-white text-black rounded-lg border-2 border-slate-400 "> Buy Now..!</button>
+      </div>
+      <div class="img1  h-[60vh] w-[50vw] text-center text-white">
+        <img src="./p3.avif " alt="" class="rounded-lg h-full w-full object-cover object-center">
+          <h1 class=" text-3xl font-medium mb-2">Reebok Nano X2</h1>
+        <h2 class=" text-xl mb-2">The Ultimate Training Shoe</h2>
+        <h3 class=" text-m mb-2">Designed for cross-training and heavy lifting
+        </h3>
+        <button class=" px-3 py-1 text-lg bg-white text-black rounded-lg border-2 border-slate-400 "> Buy Now..!</button>
+      </div>
+     
+      <div class="img1  h-[60vh] w-[50vw] text-center text-white">
+        <img src="./p5.avif " alt="" class="rounded-lg h-full w-full object-cover object-center">
+          <h1 class=" text-3xl font-medium mb-2"> Under Armour HOVR Phantom 3</h1>
+        <h2 class=" text-xl mb-2"> Run with Zero Gravity Feel</h2>
+        <h3 class=" text-m mb-2">HOVR foam for energy return
+        </h3>
+        <button class=" px-3 py-1 text-lg bg-white text-black rounded-lg border-2 border-slate-400 "> Buy Now..!</button>
+      </div>
+      <div class="img1  h-[60vh] w-[50vw] text-center text-white">
+        <img src="./p9.avif " alt="" class="rounded-lg h-full w-full object-cover object-center">
+          <h1 class=" text-3xl font-medium mb-2">New Balance Fresh Foam 1080v12</h1>
+        <h2 class=" text-xl mb-2">Comfort That Lasts Miles</h2>
+        <h3 class=" text-m mb-2">Fresh Foam midsole for plush cushioning
+        </h3>
+        <button class=" px-3 py-1 text-lg bg-white text-black rounded-lg border-2 border-slate-400 "> Buy Now..!</button>
+      </div>
+      <div class="img1  h-[60vh] w-[50vw] text-center text-white">
+        <img src="./p7.avif " alt="" class="rounded-lg h-full w-full object-cover object-center">
+          <h1 class=" text-3xl font-medium mb-2"> Asics Gel-Kayano 29</h1>
+        <h2 class=" text-xl mb-2">Support You Can Count On</h2>
+        <h3 class=" text-m mb-2">GEL technology for shock absorption
+        </h3>
+        <button class=" px-3 py-1 text-lg bg-white text-black rounded-lg border-2 border-slate-400 "> Buy Now..!</button>
+      </div>
+      <div class="img1  h-[60vh] w-[50vw] text-center text-white">
+        <img src="./p2.avif " alt="" class="rounded-lg h-full w-full object-cover object-center">
+          <h1 class=" text-3xl font-medium mb-2">Sketchers GOwalk 6</h1>
+        <h2 class=" text-xl mb-2">Everyday Walking Redefined</h2>
+        <h3 class=" text-m mb-2">Air-cooled Goga Mat insole
+        </h3>
+        <button class=" px-3 py-1 text-lg bg-white text-black rounded-lg border-2 border-slate-400 "> Buy Now..!</button>
+      </div>
+      <div class="img1  h-[60vh] w-[50vw] text-center text-white ">
+        <img src="./p1.avif " alt="" class="rounded-lg h-full w-full object-cover object-center mb-2"> 
+        <h1 class=" text-3xl font-medium mb-2">Nike Air Max 270</h1>
+        <h2 class=" text-xl mb-2">Step into Comfort and Style</h2>
+        <h3 class=" text-m mb-2">Lightweight mesh upper for breathability
+        </h3>
+        <button class=" px-3 py-1 text-lg bg-white text-black rounded-lg border-2 border-slate-400 "> Buy Now..!</button>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
